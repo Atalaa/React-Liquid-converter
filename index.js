@@ -44,10 +44,7 @@ function LiquidInput(props) {
     <fieldset>
       <legend>{props.unitName}</legend>
       <br />
-      <input
-        value={Number(props.unit).toFixed(2)}
-        onChange={props.handleInputChange}
-      />
+      <input value={props.unit} onChange={props.handleInputChange} />
     </fieldset>
   );
 }
